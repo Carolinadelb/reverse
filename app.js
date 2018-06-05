@@ -34,4 +34,48 @@ console.log(numbers);
 
 //Segunda solución:
 
+var vowels = ['a', 'e', 'i', 'o', 'u'];
+/*
+//método pop (metodo de array solo funciona con array)
+console.log(vowels.pop());// ahí da la última posición 'u'
+// el array original se modifica en tamaño.
+
+console.log(vowels);
+console.log(vowels.pop());// se va quitando últimos elementos
+//para colocarnos nuevamente:
+*/
+
+// Método Splice(puede funcionar con 3 párametros)
+
+//para Eliminar y modifica el array original:
+
+console.log(vowels.splice(0,1)); //solo quita la a que esta en posicion 0
+console.log(vowels);// e i o u
+console.log(vowels.splice(1,1)); //elimina la i que en este caso esta posicion 1
+
+// la siquiente forma (para eliminar y reemplazar con algo nuevo):
+console.log(vowels.splice(1, 1, 'hola'));
+console.log(vowels); 
+/* con esto queda literalmente así:
+[ 'e' ]
+[ 'a', 'hola', 'i', 'o', 'u' ] */
+
+console.log(vowels.splice(0, 0, 'hola2')); //para que no elimine se pone 00 y se agrega algo X
+console.log(vowels);
+
+console.log(vowels.splice(2, 0, 'caro aprende lento'));
+console.log(vowels);
+
+
+var vowels = ['a', 'e', 'i', 'o', 'u'];
+console.log(vowels.pop()); //u
+console.log(vowels.splice(0, 0, 'u')); //para que agregue la u 
+console.log(vowels);
+console.log(vowels.pop());
+console.log(vowels.splice(1, 0, 'o'));
+console.log(vowels);
+
+//Funcion llamada reverse:
+
+
 
