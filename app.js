@@ -99,3 +99,12 @@ var reverse = function (array){
 console.log(reverse(books)); 
 console.log(books);
 
+// dios pocas líneas de códigoooo
+//MÉTODO REVERSE: retorna el mismo array con los elementos invertidos
+var vowels = ['a', 'e', 'i', 'o', 'u'];
+console.log(vowels.reverse());
+console.log(vowels);
+
+var books = ['miau', 'guau', 'cuak'];
+console.log(books.reverse());
+console.log(books);
