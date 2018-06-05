@@ -76,6 +76,26 @@ console.log(vowels.splice(1, 0, 'o'));
 console.log(vowels);
 
 //Funcion llamada reverse:
+var vowels = ['a', 'e', 'i', 'o', 'u'];
+var reverse = function (array){
+    for (var i = 0; i<array.length; i++) {
+        var item = array.pop();
+        array.splice(i, 0, item);
+    }
+    return array
+}
+console.log(reverse(vowels)); 
+console.log(vowels);
+// cambia el array original
 
-
+var books = ['miau', 'guau', 'cuak'];
+var reverse = function (array){
+    for (var i = 0; i<array.length; i++) {
+        var item = array.pop();
+        array.splice(i, 0, item);
+    }
+    return array
+}
+console.log(reverse(books)); 
+console.log(books);
 
